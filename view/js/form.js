@@ -15,6 +15,7 @@ export default class form {
 
     let btnList = document.createElement('button');
     btnList.className = 'formBtn-list';
+    btnList.id = 'formBtnRedirect';
     btnList.type = 'button';
     btnList.textContent = 'Lista';
     container.appendChild(btnList);
@@ -49,6 +50,7 @@ export default class form {
 
     let btnSubmit = document.createElement('button');
     btnSubmit.className = 'formBtn-list';
+    btnSubmit.id = 'formBtnSubmit';
     btnSubmit.type = 'button';
     btnSubmit.textContent = 'Cadastrar';
     form.appendChild(btnSubmit);
