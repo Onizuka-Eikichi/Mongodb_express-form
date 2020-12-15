@@ -1,3 +1,4 @@
+import list from './list.js';
 export default class form {
   constructor() {}
 
@@ -18,6 +19,9 @@ export default class form {
     btnList.id = 'formBtnRedirect';
     btnList.type = 'button';
     btnList.textContent = 'Lista';
+    btnList.addEventListener('click', () => {
+      new list().createPage();
+    });
     container.appendChild(btnList);
 
     let form = document.createElement('form');
