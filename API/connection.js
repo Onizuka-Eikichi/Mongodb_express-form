@@ -1,9 +1,13 @@
 import mongoose from 'mongoose';
+import enviroment from 'dotenv';
 
-const URI =
-  'mongodb+srv://onizuka:oniadm@prova2chamada.h7zow.mongodb.net/Clientes?retryWrites=true&w=majority';
+const env = enviroment.config();
+//const URI = '';
 
-mongoose.connect(URI, { useUnifiedTopology: true, useNewUrlParser: true });
+mongoose.connect(process.env.MONGO_DB, {
+  useUnifiedTopology: true,
+  useNewUrlParser: true,
+});
 mongoose.Promise = global.Promise;
 
 export default mongoose;
