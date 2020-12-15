@@ -22,6 +22,13 @@ router.post('/register', async (req, res) => {
   }
 });
 
-router.get('/data', async (req, res) => {});
+router.get('/data', async (req, res) => {
+  try {
+    const dados = await form.find();
+    return res.json(dados);
+  } catch (error) {
+    console.log(error);
+  }
+});
 
 export default router;
