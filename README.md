@@ -1,4 +1,4 @@
 # Mongodb_express-form
 
 =======
-Packages being used: body-parser, express, mongoose, dotenv.
+Packages being used: express, mongoose, dotenv.
