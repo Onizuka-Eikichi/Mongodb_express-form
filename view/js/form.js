@@ -15,7 +15,7 @@ export default class form {
     container = document.querySelector('.container');
 
     let btnList = document.createElement('button');
-    btnList.className = 'formBtn-list';
+    btnList.className = 'formBtn-list btn btn-secondary';
     btnList.id = 'formBtnRedirect';
     btnList.type = 'button';
     btnList.textContent = 'Lista';
@@ -23,6 +23,10 @@ export default class form {
       new list().createPage();
     });
     container.appendChild(btnList);
+
+    let h2 = document.createElement('h2');
+    h2.textContent = 'Cadastrar Cliente';
+    container.appendChild(h2);
 
     let form = document.createElement('form');
     form.action = '/register';
@@ -73,7 +77,7 @@ export default class form {
     form.appendChild(divFormCnpj);
 
     let btnSubmit = document.createElement('button');
-    btnSubmit.className = 'formBtn-list';
+    btnSubmit.className = 'formBtn-list btn btn-secondary';
     btnSubmit.id = 'formBtnSubmit';
     btnSubmit.type = 'submit';
     btnSubmit.textContent = 'Cadastrar';

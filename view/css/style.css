@@ -1,13 +1,92 @@
-.content {
-  text-align: center;
+* {
+  font-size: 20px;
+  position: relative;
 }
 
-.container {
-  font-size: 20px;
+h2 {
+  font-size: bold;
+  font-size: 1.2em;
+  padding: 10px;
+  margin: 50px 0 10px 0;
+  text-align: center;
+  position: relative;
+}
+
+.content {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.container,
+.container-list {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px dotted gray;
+  width: 300px;
+  height: auto;
+  justify-content: center;
+}
+
+.container-list {
+  width: 500px;
   margin-left: auto;
   margin-right: auto;
 }
 
+/*Onde os dados dos clientes sao injetados*/
 .lista {
-  border: 2px dotted gainsboro;
+  position: relative;
+  width: auto;
+  height: auto;
+  margin-top: 50px;
+  display: flex;
+}
+
+.dataInput {
+  padding: 10px;
+  margin: 20px 0 20px 10px;
+}
+
+/*botoes  formBtnSubmit  formBtnRedirect */
+
+.formBtn-list,
+.listBtn-form {
+  padding: 10px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+#formBtnRedirect {
+  float: right;
+  margin-bottom: 20px;
+}
+
+.listBtn-form {
+  float: left;
+}
+
+/*Dados Clientes */
+
+.CustomerData {
+  flex-direction: row;
+  text-align: justify;
+  border: 1px solid black;
+  width: 200px;
+  height: auto;
+  border-radius: 10%;
+  background-color: greenyellow;
+  margin: 10px;
+}
+
+.CustomerData p {
+  padding: 0;
+  margin: 0;
+}
+
+.CustomerData p label {
+  font-size: 0.8em;
+  font-weight: bolder;
 }

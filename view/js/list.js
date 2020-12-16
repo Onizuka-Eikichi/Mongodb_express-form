@@ -7,14 +7,14 @@ export default class list {
     content.innerHTML = '';
 
     let container = document.createElement('div');
-    container.className = 'container';
+    container.className = 'container-list';
 
     content.appendChild(container);
 
-    container = document.querySelector('.container');
+    container = document.querySelector('.container-list');
 
     let btnList = document.createElement('button');
-    btnList.className = 'listBtn-form';
+    btnList.className = 'listBtn-form btn btn-secondary';
     btnList.id = 'listBtnRedirect';
     btnList.type = 'button';
     btnList.textContent = 'Form';
@@ -42,7 +42,7 @@ export default class list {
     let btnDateEnd = document.getElementById('btnEnd');
 
     let divExibirLista = document.createElement('div');
-    divExibirLista.className = 'lista';
+    divExibirLista.className = 'lista row justify-content-center';
     divExibirLista.id = 'customer';
 
     let customer = document.getElementById('customer');
@@ -90,14 +90,11 @@ const fetchData = async (dataInicio, dataFim) => {
     clientes.forEach((element) => {
       if (dataInicio <= element.date && element.date <= dataFim) {
         html += `
-        <div class="CustomerData">
+        <div class="CustomerData col-6 col-sm-3">
              
         <p> <label>Nome: ${element.name}</label></p>
-            
         <p> <label>Rua: ${element.adress}</label></p>
-            
         <p> <label>Contato: ${element.contact}</label></p>
-            
         <p> <label>Cnpj: ${element.cnpj}</label></p>
             
         </div>
