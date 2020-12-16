@@ -18,6 +18,9 @@ export default class list {
     btnList.id = 'listBtnRedirect';
     btnList.type = 'button';
     btnList.textContent = 'Form';
+    btnList.addEventListener('click', () => {
+      window.location.reload(true);
+    });
     container.appendChild(btnList);
 
     let dateInicio = document.createElement('input');

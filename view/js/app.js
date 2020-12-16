@@ -6,4 +6,3 @@ export default class App {
     new form().createPage();
   }
 }
-new App();
